@@ -6,7 +6,7 @@ Fetch the latest with, e.g.
 
 or run with
 
-    docker run -ti --rm -v ${PWD}:${PWD} -w ${PWD} -u $(id -u):(id -g)  \
+    docker run -ti --rm -v "${PWD}":"${PWD}" -w "${PWD}" -u "$(id -u)":"$(id -g)"  \
       cheshirekow/cmake-format \
       cmake-format -i ./**/CMakeLists.txt
 
